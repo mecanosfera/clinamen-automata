@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>clinamen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"-->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+	<link type="text/css" rel="stylesheet" href="css/global.css" />
+	<link type="text/css" rel="stylesheet" href="css/simulation.css" />
+	<!--link type="text/css" rel="stylesheet" href="css/editor.css" />
+	<link type="text/css" rel="stylesheet" href="css/entitymenu.css" /-->
+	<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/raphael.min.js"></script>
+	<script type="text/javascript" src="worlds/worlds.js"></script>
+	<script type="text/javascript" src="worlds/mundos_aula.js"></script>
+	<script type="text/javascript" src="src/functions.js"></script>
+	<script type="text/javascript" src="src/entity/entity.js"></script>
+	<script type="text/javascript" src="src/entity/world.js"></script>
+	<script type="text/javascript" src="src/entity/agent.js"></script>
+	<script type="text/javascript" src="src/entity/node.js"></script>
+	<script type="text/javascript" src="src/entity/behavior/decorator.js"></script>
+	<script type="text/javascript" src="src/entity/behavior/action.js"></script>
+	<script type="text/javascript" src="src/ui/ui.js"></script>
+	<script type="text/javascript" src="src/ui/ui_editor.js"></script>
+	<script type="text/javascript" src="src/ui/ui_simulation.js"></script>
+	<script type="text/javascript" src="src/editor/editor.js"></script>
+	<script type="text/javascript" src="src/simulation/simulation.js"></script>
+
+
+
+</head>
+
+<body>
+	<main>
+
+
+		<!-- SIMULATION -->
+		<section id="simulation">
+			<canvas id="world_grid"></canvas>
+		</section>
+
+
+
+			<!-- SIDE MENU -->
+			<nav id="library" class="library">
+				<section id="simulation_control" class="simulation_controls">
+					<a id="next" class="control next" href="#">next</a>
+					<a id="play" class="control play" href="#">play</a>
+					<a id="stop" class="control stop" href="#">stop</a>
+					<input type="text" id="speed" value="500" />
+				</section>
+				<ul id="worlds_list" class="entity_list"></ul>
+				<ul id="entity_info" class="entity_list"></ul>
+			</nav>
+		</section>
+
+	</main>
+
+<script type="text/javascript">
+
+	var sim = new Simulation();
+
+	//var ratio = parseInt(window.innerWidth-250/(window.innerHeight-40));
+	//var uui = new UI({X:20*ratio,Y:20});
+
+	//var ed_ui = new EditorUI({editor:new Editor({})});
+	//ed_ui.start();
+
+
+	/*var ag = new Agent({world: new World({})});
+	ag.addTree(new Selector({
+		children: [
+			new Selector({
+				children:[
+					new Condition({
+						condition:["==",{type:"self",prop:"hp"},35],
+						child: new Action({
+							target:"self",
+							act:"teste"
+						})
+					}),
+					new Action({
+						target:"self",
+						act: "heal"
+					})
+				]
+			}),
+			new Action({
+				target:"self",
+				act: "heal"
+			})
+		]
+	}));*/
+
+	//alert(ag.tree.type);
+
+	//ag.hp=34;
+
+
+	//ag.tree.run();
+
+</script>
+
+</body>
+</html>
