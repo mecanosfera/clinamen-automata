@@ -1,0 +1,60 @@
+body,div,nav,main,ul,li,span,h3,a,em,strong{
+  font-family: Monaco, monospace;
+  font-size: 16px;
+  color: #fff;
+}
+
+body{
+  background-color: #000;
+}
+
+.library {
+  float: right;
+  width: 300px;
+  border-left: 1px solid #666;
+  background-color: #21252b;
+  padding:0px;
+}
+
+.simulation_controls{
+  background-color: #000;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  margin-left: -1px;
+  border-bottom: 1px solid #666;
+}
+
+.library ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+.entity_list li{
+  margin: 0px;
+  padding:10px;
+  list-style: none;
+}
+
+.entity_list li.selected{
+  background-color: #ccc;
+
+}
+
+.entity_list li a{
+  text-decoration: none;
+}
+
+.entity_list li.selected a{
+  color: #000;
+  font-weight: bold;
+}
+
+#speed{
+  width: 30px;
+  border: 1px solid #333;
+  background-color: #ccc;
+  padding: 5px;
+  margin-left: 5px;
+}

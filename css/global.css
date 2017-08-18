@@ -1,0 +1,76 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+nav#top{
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 5px;
+  font-family: Ubuntu;
+  height: 20px;
+  text-align: right;
+  position: relative;
+}
+
+nav#top h1{
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  font-family: Ubuntu;
+  color: #fff;
+  font-size: 14px;
+  font-weight: none;
+  text-shadow: 2px #ccc;
+}
+
+nav#top #status{
+  display: none;
+  float: left;
+
+}
+
+#controls{
+  float: left;
+  display: inline-block;
+}
+
+#controls a{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+}
+
+#controls #stop{
+  background-image: url("../img/stop.png");
+}
+
+#controls #play{
+  background-image: url("../img/play.png");
+}
+
+#controls #pause{
+  background-image: url("../img/pause.png");
+}
+
+#world_grid{
+  float:left;
+}
+
+
+#info{
+  float: right;
+  width: 248px;
+  height: 200px;
+  border: 1px solid #3d3d3d;
+  border-top: none;
+  background-color: #fff;
+}
+
+svg{
+  z-index: -1000;
+  display:none;
+}
